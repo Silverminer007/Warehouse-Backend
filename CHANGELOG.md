@@ -1,3 +1,9 @@
+## [1.0.6](https://github.com/Silverminer007/Warehouse-Backend/compare/v1.0.5...v1.0.6) (2025-06-11)
+
+### Bug Fixes
+
+* ghcr package version number ([37960d1](https://github.com/Silverminer007/Warehouse-Backend/commit/37960d16a326d9d332fcc2813d17747e4b9315a9))
+
 ## [1.0.5](https://github.com/Silverminer007/Warehouse-Backend/compare/v1.0.4...v1.0.5) (2025-06-11)
 
 ### Bug Fixes

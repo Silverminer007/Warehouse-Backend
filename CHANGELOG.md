@@ -1,3 +1,9 @@
+## [1.0.8](https://github.com/Silverminer007/Warehouse-Backend/compare/v1.0.7...v1.0.8) (2025-06-11)
+
+### Bug Fixes
+
+* remove v from version ([b1ff7d1](https://github.com/Silverminer007/Warehouse-Backend/commit/b1ff7d1b82968ca80e653fb06c27017a7b8ec9ce))
+
 ## [1.0.7](https://github.com/Silverminer007/Warehouse-Backend/compare/v1.0.6...v1.0.7) (2025-06-11)
 
 ### Bug Fixes

@@ -1,3 +1,9 @@
+## [1.1.1](https://github.com/Silverminer007/Warehouse-Backend/compare/v1.1.0...v1.1.1) (2025-06-11)
+
+### Bug Fixes
+
+* fix docker run command ([cba94e2](https://github.com/Silverminer007/Warehouse-Backend/commit/cba94e2e25732d31e3d3f8f78b68eedcd1dd1118))
+
 ## [1.1.0](https://github.com/Silverminer007/Warehouse-Backend/compare/v1.0.10...v1.1.0) (2025-06-11)
 
 ### Features

@@ -1,3 +1,9 @@
+## [1.0.5](https://github.com/Silverminer007/Warehouse-Backend/compare/v1.0.4...v1.0.5) (2025-06-11)
+
+### Bug Fixes
+
+* make ghcr package name lowercase again ([ce678fd](https://github.com/Silverminer007/Warehouse-Backend/commit/ce678fd2340f7c7ebcd85154c63f7e326d0def68))
+
 ## [1.0.4](https://github.com/Silverminer007/Warehouse-Backend/compare/v1.0.3...v1.0.4) (2025-06-11)
 
 ### Bug Fixes

@@ -1,3 +1,9 @@
+## [1.0.4](https://github.com/Silverminer007/Warehouse-Backend/compare/v1.0.3...v1.0.4) (2025-06-11)
+
+### Bug Fixes
+
+* merge docker.yml and release.yml ([91992bd](https://github.com/Silverminer007/Warehouse-Backend/commit/91992bd3b92d352958e8960fbe96a4281835d8c0))
+
 ## [1.0.3](https://github.com/Silverminer007/Warehouse-Backend/compare/v1.0.2...v1.0.3) (2025-06-11)
 
 ### Bug Fixes

@@ -1,0 +1,6 @@
+services:
+  warehouse-backend:
+    image: ghcr.io/silverminer007/warehouse-backend:1
+    container_name: warehouse-backend
+    ports:
+      - "8000:8000"

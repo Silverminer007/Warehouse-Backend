@@ -1,0 +1,28 @@
+name: Deploy name Docker image to server
+
+on:
+  workflow_run:
+    workflows: [ "Build Docker on Release" ]
+    types:
+      - completed
+
+jobs:
+  deploy:
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Deploy via SSH
+      uses: appleboy/ssh-action@v1.0.3
+      with:
+        host: ${{ secrets.SSH_HOST }}
+        username: ${{ secrets.SSH_USER }}
+        key: ${{ secrets.SSH_KEY }}
+        script: |
+          cd warehouse
+          docker compose pull
+          docker compose down
+          docker compose up -d

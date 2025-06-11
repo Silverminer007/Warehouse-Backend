@@ -28,10 +28,16 @@ jobs:
           TAG=$(git describe --tags --abbrev=0)
           echo "TAG=$TAG" >> $GITHUB_ENV
 
-      - name: Strip v prefix
+      - name: Extract version parts
         run: |
           VERSION=${TAG#v}
+          MAJOR=$(echo "$VERSION" | cut -d. -f1)
+          MINOR=$(echo "$VERSION" | cut -d. -f2)
           echo "VERSION=$VERSION" >> $GITHUB_ENV
+          echo "MAJOR=$MAJOR" >> $GITHUB_ENV
+          echo "MINOR=$MINOR" >> $GITHUB_ENV
+          echo "VERSION_MAJOR=${MAJOR}" >> $GITHUB_ENV
+          echo "VERSION_MINOR=${MAJOR}.${MINOR}" >> $GITHUB_ENV
 
       - name: Setup Docker buildx
         uses: docker/setup-buildx-action@v3
@@ -51,3 +57,5 @@ jobs:
           tags: |
             ghcr.io/silverminer007/warehouse-backend:latest
             ghcr.io/silverminer007/warehouse-backend:${{ env.VERSION }}
+            ghcr.io/silverminer007/warehouse-backend:${{ env.VERSION_MINOR }}
+            ghcr.io/silverminer007/warehouse-backend:${{ env.VERSION_MAJOR }}

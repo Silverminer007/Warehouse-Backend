@@ -1,3 +1,9 @@
+## [1.0.9](https://github.com/Silverminer007/Warehouse-Backend/compare/v1.0.8...v1.0.9) (2025-06-11)
+
+### Bug Fixes
+
+* fetch tags on checkout of docker build ([6d20ebf](https://github.com/Silverminer007/Warehouse-Backend/commit/6d20ebfaca55a7627d7518a7f55a154dbe6b9201))
+
 ## [1.0.8](https://github.com/Silverminer007/Warehouse-Backend/compare/v1.0.7...v1.0.8) (2025-06-11)
 
 ### Bug Fixes

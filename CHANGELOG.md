@@ -1,3 +1,9 @@
+## [1.1.0](https://github.com/Silverminer007/Warehouse-Backend/compare/v1.0.10...v1.1.0) (2025-06-11)
+
+### Features
+
+* add docker-compose.yaml ([e9146b8](https://github.com/Silverminer007/Warehouse-Backend/commit/e9146b88e10b4d8d8bcbc0d0987a0ed202d0fef7))
+
 ## [1.0.10](https://github.com/Silverminer007/Warehouse-Backend/compare/v1.0.9...v1.0.10) (2025-06-11)
 
 ### Bug Fixes

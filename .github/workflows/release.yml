@@ -47,7 +47,7 @@ jobs:
       - name: Extract version and lowercase owner
         id: meta
         run: |
-          echo "VERSION=${GITHUB_REF#refs/tags/v}" >> $GITHUB_OUTPUT
+          echo "VERSION=${GITHUB_REF#refs/tags/v}" >> $GITHUB_ENV
           echo "OWNER_LC=${GITHUB_REPOSITORY_OWNER,,}" >> $GITHUB_OUTPUT
 
       - name: Build and push Docker image
@@ -57,4 +57,4 @@ jobs:
           push: true
           tags: |
             ghcr.io/${{ steps.meta.outputs.OWNER_LC }}/packliste:latest
-            ghcr.io/${{ steps.meta.outputs.OWNER_LC }}/packliste:${{ steps.semantic_release.outputs.nextReleaseVersion }}
+            ghcr.io/${{ steps.meta.outputs.OWNER_LC }}/packliste:${{ env.VERSION }}

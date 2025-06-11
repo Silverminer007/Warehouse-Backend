@@ -1,0 +1,35 @@
+name: Lint Commits
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  commitlint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install commitlint
+        run: |
+          npm install -g @commitlint/config-conventional @commitlint/cli
+
+      - name: Get commits
+        id: commits
+        run: |
+          git fetch --depth=20
+          echo "COMMITS=$(git log origin/main..HEAD --pretty=format:%s | jq -R -s -c 'split("\n")')" >> $GITHUB_ENV
+
+      - name: Lint commits
+        run: |
+          echo $COMMITS | jq -r '.[]' | while read commit; do
+            echo "$commit" | npx commitlint --config @commitlint/config-conventional
+          done

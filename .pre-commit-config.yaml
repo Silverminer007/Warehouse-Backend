@@ -1,0 +1,9 @@
+repos:
+  - repo: local
+    hooks:
+      - id: commitlint
+        name: Commitlint (Conventional Commits)
+        entry: bash -c 'commitlint --edit $1'
+        language: system
+        pass_filenames: false
+        stages: [commit-msg]

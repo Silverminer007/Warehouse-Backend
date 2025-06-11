@@ -1,3 +1,9 @@
+## [1.0.7](https://github.com/Silverminer007/Warehouse-Backend/compare/v1.0.6...v1.0.7) (2025-06-11)
+
+### Bug Fixes
+
+* split docker build and release workflows again ([650e452](https://github.com/Silverminer007/Warehouse-Backend/commit/650e452f913649fe0b480ddd77290110f54c5aea))
+
 ## [1.0.6](https://github.com/Silverminer007/Warehouse-Backend/compare/v1.0.5...v1.0.6) (2025-06-11)
 
 ### Bug Fixes
